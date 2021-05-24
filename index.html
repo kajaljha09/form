@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms
+    </title>
+</head>
+<style>
+    .image {
+        padding-left: 500px;
+        align-content: center;
+    }
+
+    .Forms{
+        padding-left: 400px;
+        padding-right: 300px;
+        align-content: center;
+    }
+    body{
+        background-color: rgb(90, 142, 211);
+    }
+</style>
+
+<body bgcolor="rgb(112, 144, 182)">
+    <div class="image">
+        <img src="blog-wp-login.png" width="400px" height=180px>
+    </div>
+    <div class="Forms" >
+    <h2><u><b>Fill the form</b></u></h2>
+        <form action="post" autocomplete="on" >
+            <fieldset>
+                <legend>Personal data</legend>
+                <label for="Forms">Username:   </label>
+                <input type="text" placeholder="Username" id="Forms"><br>
+                Password:<input type="password" placeholder="Password"><br>
+                Email Id:<input type="email" placeholder="Email ID"><br>
+                <label>DOB:</label><input type="date"><br>
+                <label>Select your gender</label>
+                <input type="radio" name="gender" id="male">
+                <lable for="male">Male</lable>
+                <input type="radio" name="gender" id="female">
+                <lable for="female">Female</lable><br>
+            </fieldset>
+            <fieldset>
+                <legend>Official data</legend>
+                <label>Select your expertise</label>
+                <input type="checkbox" id="choice"><label for="choice">Html</label>
+                <input type="checkbox" id="choice1"><label for="choice1">Css</label><br>
+
+                <label>Upload Docs</label><input type="file"><br>
+            
+                <label for="tarea">Write below about yourself</label><br>
+                <textarea id="tarea" type="text" rows="4" cols="80"></textarea><br>
+
+                <!-- For options to choose from -->
+                <!-- Select tag is used -->
+                <label for="course">Select course</label>
+                <select id="course" >
+                   
+                     
+                    <optgroup label="Undergraduate">
+                        <option>Btech</option>
+                        <option>BCom</option>
+                        <option>BA</option>
+                        <option>B Pharma</option>
+                    </optgroup>
+                     
+                    <optgroup label="Post Graduate">
+                        <option>Mtech</option>
+                        <option>MCom</option>
+                        <option>MA</option>
+                        <option>M Pharma</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <input type="button" value="login"><button type="reset" value="button">Reset</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
